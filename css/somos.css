@@ -132,6 +132,21 @@ main {
     border-radius: 12px;
 }
 
+.card-fallecido:hover {
+    background-color: var(--negro);
+    color: var(--blanco, #ffffff);
+    transition: all 0.3s ease;
+}
+
+.card-fallecido:hover .card-text {
+    color: #cccccc;
+}
+
+.card-fallecido:hover .card-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
 
 .card-body h5{
     color: var(--rojo2);
@@ -139,7 +154,7 @@ main {
     margin-bottom: 8px;
 }
 
-.card-body p {
+.card-body  {
     font-size: 13px;
     color: #444;
 }
