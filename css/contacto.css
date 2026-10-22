@@ -18,7 +18,8 @@
 body {
     color: var(--negro);
     font-size: 16px;
-    background-color: #f8fafc;
+    background: linear-gradient(180deg, var(--rojo1) 0%, rgba(168, 27, 27, 0.6) 35%, #f8fafc 80%);
+    background-attachment: fixed; 
     line-height: 1.5;
 }
 
@@ -60,7 +61,7 @@ body {
 
 
 .content {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
     margin-top: 110px; 
@@ -82,7 +83,7 @@ body {
 }
 
 /* Caja de información de contacto */
-.Info {
+/* .Info {
     background-color: var(--blanco);
     padding: 20px 25px;
     border-radius: 12px;
@@ -103,9 +104,9 @@ body {
 .Info strong {
     color: var(--rojo2);
 }
-
+ */
 /* Formulario de contacto */
-.form {
+/* .form {
     background-color: var(--blanco);
     padding: 30px;
     border-radius: 12px;
@@ -167,7 +168,7 @@ body {
 
 .form button:hover {
     background-color: var(--rojo2);
-}
+} */
 
 
 .pie {

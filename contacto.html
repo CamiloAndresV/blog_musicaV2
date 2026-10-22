@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="https://imagenpng.com/wp-content/uploads/2018/05/Rolling_Stone_logo2.png">
+    <link rel="icon" type="image/png" href="https://imagenpng.com/wp-content/uploads/2018/05/Rolling_Stone_logo2.png">
     <title>Contacto-Rolling Stones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/contacto.css">
 </head>
+
 <body>
     <header class="menu">
         <nav class="nav">
@@ -16,33 +24,182 @@
         </nav>
     </header>
     <section class="content">
-        <h1>Contáctanos</h2>
-        <h2>¿Quieres contactar a The Rolling Stones? Escríbenos o comunícate con nosotros a través de los siguientes medios:</h2>
-        
-    
-        <div class="Info">
-            <p><strong>Correo Electrónico:</strong> contacto@rollingstones.com</p>
-            <p><strong>Telefono de atención:</strong> +44 20 7214 2545</p>
-            <p><strong>Ubicación de oficina de prensa: </strong> 45 Abbey Road, St Jhon's Wood, London, Reino Unido</p>
+        <!-- Muestra de nuestro equipo  -->
+        <div class="container my-5">
+            <div class="text-center mb-5">
+                <span class="badge rounded-pill px-3 py-2 mb-2" style="background-color: var(--rojo1);">
+                    <i class="bi bi-people-fill me-1"></i> Creadores
+                </span>
+                <h2 class="display-6 fw-bold" style="color: var(--rojo1);">Nuestro Equipo</h2>
+                <!-- card para mostrar a Kevyn -->
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 tarjeta-equipo text-center p-3 shadow-sm">
+                            <img src="https://github.com/CodeByKevyn.png"
+                                class="card-img-top rounded-circle mx-auto mt-2" alt="Foto de Kevin"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold mt-2">Kevin Patiño</h5>
+                                    <p class="card-text text-muted fs-6">Desarrollador FullStack</p>
+                                </div>
+                                <a href="https://github.com/CodeByKevyn" target="_blank" class="btn btn-github mt-3">
+                                    <i class="bi bi-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card para mostrar a Gabriela -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 tarjeta-equipo text-center p-3 shadow-sm">
+                            <img src="https://github.com/gabriela-hm.png"
+                                class="card-img-top rounded-circle mx-auto mt-2" alt="Foto de Gabriela"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold mt-2">Gabriela Hernández</h5>
+                                    <p class="card-text text-muted fs-6">Desarrolladora FullStack</p>
+                                </div>
+                                <a href="https://github.com/gabriela-hm" target="_blank" class="btn btn-github mt-3">
+                                    <i class="bi bi-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-        </div>
+                    <!-- card para mostrar a Nycol -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 tarjeta-equipo text-center p-3 shadow-sm">
+                            <img src="https://github.com/nyckveramon-dotcom.png"
+                                class="card-img-top rounded-circle mx-auto mt-2" alt="Foto de Nycol"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold mt-2">Nycol Vera</h5>
+                                    <p class="card-text text-muted fs-6">Desarrolladora FullStack</p>
+                                </div>
+                                <a href="https://github.com/nyckveramon-dotcom" target="_blank"
+                                    class="btn btn-github mt-3">
+                                    <i class="bi bi-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-        <form class="form" action="#">
-            <h3>Envíanos un mensaje</h3>
-            <p>Este mensaje se entregará a The Rolling Stones</p> 
+                    <!-- card para mostrar a Camilo -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 tarjeta-equipo text-center p-3 shadow-sm">
+                            <img src="https://github.com/CamiloAndresV.png"
+                                class="card-img-top rounded-circle mx-auto mt-2" alt="Foto de Camilo"
+                                style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h5 class="card-title fw-bold mt-2">Camilo Ospina</h5>
+                                    <p class="card-text text-muted fs-6">Desarrolladora FullStack</p>
+                                </div>
+                                <a href="https://github.com/CamiloAndresV" target="_blank" class="btn btn-github mt-3">
+                                    <i class="bi bi-github me-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" required>
+                </div>
+            </div>
+            <div class="text-center my-4">
+                <span class="badge rounded-pill px-3 py-2 mb-2" style="background-color: var(--rojo1);">
+                    <i class="bi bi-headset me-1"></i> Atención al Fan
+                </span>
+                <h1 class="fw-bold display-6">Contáctanos</h1>
+                <p class="text-secondary fs-6 mx-auto mt-2" style="max-width: 550px;">
+                    ¿Quieres contactar a The Rolling Stones? Escríbenos o comunícate con nosotros a través de los
+                    siguientes
+                    medios:
+                </p>
+            </div>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Escribe tu@correo.com" required>
+            <div class="container my-4" style="max-width: 680px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-6 text-end">
+                        <div class="p-2 fw-bold text-etiqueta">
+                            <i class=" bi-envelope-fill me-1"></i> Correo Electrónico:
+                        </div>
+                    </div>
+                    <div class="col-6 text-start">
+                        <div class="p-3 bg-white shadow-sm rounded-3 border-end border-3 border-danger">
+                            contacto@rollingstones.com
+                        </div>
+                    </div>
+                    <div class="col-6 text-end">
+                        <div class="p-2 fw-bold text-etiqueta">
+                            <i class="bi bi-telephone-fill me-1"></i> Teléfono de atención:
+                        </div>
+                    </div>
+                    <div class="col-6 text-start">
+                        <div class="p-3 bg-white shadow-sm rounded-3 border-end border-3 border-danger">
+                            +44 20 7214 2545
+                        </div>
+                    </div>
+                    <div class="col-6 text-end">
+                        <div class="p-2 fw-bold text-etiqueta">
+                            <i class="bi bi-geo-alt-fill me-1"></i> Ubicación oficina de prensa:
+                        </div>
+                    </div>
+                    <div class="col-6 text-start">
+                        <div class="p-3 bg-white shadow-sm rounded-3 border-end border-3 border-danger">
+                            45 Abbey Road, St Jhon's Wood, London, Reino Unido
+                        </div>
+                    </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="10" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+            </div>
 
-            <button type="submit">Enviar mensaje</button>
-        </form>
+            <div class="card border-0 shadow-sm p-3 mx-auto"
+                style="max-width: 680px; border-radius: 20px; background-color: #ffffff;">
+                <div class="card-body">
 
+                    <h3 class="fw-bold mb-1" style="color: var(--rojo1);">
+                        <i class="bi bi-send-fill me-2"></i>Envíanos un mensaje
+                    </h3>
+                    <p class="text-muted mb-4 fs-6">Este mensaje se entregará a The Rolling Stones</p>
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light text-muted border-end-0">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" id="nombre" name="nombre"
+                                    class="form-control bg-light border-start-0" placeholder="Escribe tu nombre"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-semibold">Correo electrónico:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light text-muted border-end-0">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="email" id="email" name="email" class="form-control bg-light border-start-0"
+                                    placeholder="Escribe tu@correo.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="form-control bg-light"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-github w-100 py-2 fs-6">
+                            <i class="bi bi-send-check-fill me-2"></i>Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
     </section>
 
     <footer class="pie">
@@ -55,6 +212,9 @@
         </ul>
         <p>contacto@rollingstones.com</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
