@@ -9,54 +9,59 @@
 :root {
     --rojo: rgb(168, 27, 27);
     --negro: rgb(31, 27, 27);
-    --gris: rgb(163, 163, 163);
-    --rojo1: rgba(82, 4, 4, 0.88);
-    --blanco: rgb(233, 219, 219);
+    --gris: rgb(120, 120, 120);
+    --rojo1: rgba(82, 4, 4, 0.92);
+    --blanco: rgb(255, 255, 255);
+    --fondo-tarjeta: rgb(250, 245, 245);
     --rojo2: rgb(70, 22, 22);
 }
 
 body {
     color: var(--negro);
     font-size: 16px;
-    background: linear-gradient(180deg, var(--rojo1) 0%, rgba(168, 27, 27, 0.6) 35%, #f8fafc 80%);
-    background-attachment: fixed; 
-    line-height: 1.5;
+    background-color: #f1f5f9;
+    line-height: 1.6;
 }
 
-.menu {
+.menu1 {
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    max-width: 600px;
+    max-width: 550px;
     background-color: var(--rojo1);
-    padding: 10px 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 8px 20px;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     z-index: 1000;
 }
 
-.nav {
+.menu-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.nav a {
+.menu-nav a {
     color: var(--blanco);
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     padding: 8px 18px;
     border-radius: 25px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.nav a:hover {
+.menu-nav a:hover {
     background-color: var(--rojo);
     color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(168, 27, 27, 0.4);
 }
 
 
