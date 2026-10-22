@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,55 +6,129 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --rojo: rgb(168, 27, 27);
     --negro: rgb(31, 27, 27);
     --gris: rgb(163, 163, 163);
-    --rojo1: rgba(82, 4, 4, 0.781);
+    --rojo1: rgba(82, 4, 4, 0.88);
     --blanco: rgb(233, 219, 219);
     --rojo2: rgb(70, 22, 22);
 }
 
-body{
+body {
     color: var(--negro);
     font-size: 16px;
+    background-color: #f8fafc;
+    line-height: 1.5;
 }
 
-.menu{
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 600px;
     background-color: var(--rojo1);
-    padding: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.nav{
-    display:flex;
+.nav {
+    display: flex;
     justify-content: center;
-    gap: 35px;
+    align-items: center;
+    gap: 15px;
 }
 
-.nav a{
+.nav a {
     color: var(--blanco);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: 0.3s ease;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    background-color: var(--rojo);
+    color: #ffffff;
 }
 
-
-main{
-    margin: 20px;
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 110px;
 }
 
-h2{
-    font-size: 26px;
-    margin: 20px 20px;
+.descripcion {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--rojo);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.descripcion h4 {
     color: var(--rojo2);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
-img{
-   border-radius: 20px;
+.descripcion h4:last-child {
+    margin-bottom: 0;
+}
+
+.integrantes h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--rojo2);
+    margin-bottom: 25px;
+}
+
+.integrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.integrante {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    padding: 20px;
+    width: 210px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    border-top: 4px solid var(--rojo);
+}
+
+.integrante img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; 
+    object-fit: cover;  
+    margin-bottom: 12px;
+    border: 3px solid #ffffff;
+}
+
+.integrante h3 {
+    color: var(--rojo2);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.integrante p {
+    font-size: 13px;
+    color: #444;
 }
 
 .pie {
@@ -64,83 +139,9 @@ img{
     text-align: center;
 }
 
-.descripcion {
-    color: var(--negro);
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 30px;
-}
-
-.descripcion h4 {
-    font-size: 15px;
-    width: 20%;
-    padding: 10px;
-}
-
-.integrantes {
-    display: flex;
-    flex-wrap: wrap;            
-    justify-content: center; 
-}
-
-.integrantes-container {
-    display: flex;
-    flex-wrap: wrap;             
-    justify-content: center;     
-    gap: 20px;                  
-    padding: 20px;
-}
-
-.integrante {
-    width: 40%;                  
-    border: 3px solid var(--rojo2);      
-    border-radius: 8px;         
-    padding: 15px;
-    text-align: center;          
-    background-color: var(--blanco); 
-}
-
-img {
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10%;
-    border: 4px solid var(--rojo1);
-    margin: 10px;
-}
-
-.integrante img {
-    /* Selecciona qué propiedades transicionar, el tiempo (0.3s) y el efecto (ease-in-out) */
-    transition: box-shadow 0.3s ease-in-out, 
-                transform 0.3s ease-in-out;
-}
-
-.integrante img:hover {
-    box-shadow: 0px 0px 20px var(--rojo);
-    transform: scale(1.2);
-}
-
-#watts {
-    /* Selecciona qué propiedades transicionar, el tiempo (0.3s) y el efecto (ease-in-out) */
-    transition: background-color 0.5s ease-in-out, 
-                box-shadow 0.5s ease-in-out, 
-                transform 0.5s ease-in-out;
-}
-
-#watts:hover {
-    background-color: var(--negro);
-    box-shadow: 0px 0px 20px var(--rojo);
-    transform: scale(1.0);
-    color: var(--blanco);
-}
-
-/* Enlace/Correo de contacto */
-.pie p:last-child { /*last-child es el último párrafo en el pie de página */
+.pie p:last-child {
     font-weight: bold;
-    color: var(--rojo);                  
+    color: var(--rojo);
 }
 
 .pie ul {
@@ -150,16 +151,13 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;                  /* Espacio uniforme entre elementos */
+    gap: 10px;
 }
 
 .pie li a {
     font-size: 0.85rem;
     color: var(--gris);
-    padding-right: 10px;             /* Espacio antes de la barrita */
-}
-
-.pie a {
+    padding-right: 10px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -169,5 +167,5 @@ img {
 }
 
 .pie li:not(:last-child) {
-    border-right: 2px solid var(--rojo); /* Dibuja una barrita a la derecha */
+    border-right: 2px solid var(--rojo);
 }
