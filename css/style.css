@@ -23,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-.menu {
+.menu1 {
     position: fixed;
     top: 15px;
     left: 50%;
@@ -40,14 +40,14 @@ body {
     z-index: 1000;
 }
 
-.nav {
+.menu-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.nav a {
+.menu-nav a {
     color: var(--blanco);
     font-size: 15px;
     font-weight: 600;
@@ -57,7 +57,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav a:hover {
+.menu-nav a:hover {
     background-color: var(--rojo);
     color: #ffffff;
     transform: translateY(-2px);
