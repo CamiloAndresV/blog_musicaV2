@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,11 +17,20 @@
 body {
     color: var(--negro);
     font-size: 16px;
-    background-color: #f8fafc;
+    /* background-color: #f8fafc; */
+    background: linear-gradient(180deg, var(--rojo1) 0%, rgba(114, 60, 60, 0.6) 35%, #f8fafc 80%);
+    background-attachment: fixed;
     line-height: 1.5;
 }
 
-.menu {
+.integrantes {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: var(--blanco);
+    margin-bottom: 25px;
+}
+
+.menun {
     position: fixed;
     top: 20px;
     left: 50%;
@@ -36,14 +44,14 @@ body {
     z-index: 1000;
 }
 
-.nav {
+.navb {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-.nav a {
+.navb a {
     color: var(--blanco);
     font-size: 15px;
     font-weight: 600;
@@ -53,7 +61,7 @@ body {
     transition: 0.3s ease;
 }
 
-.nav a:hover {
+.navb a:hover {
     background-color: var(--rojo);
     color: #ffffff;
 }
@@ -69,7 +77,7 @@ main {
     background-color: var(--blanco);
     padding: 25px;
     border-radius: 12px;
-    border-left: 5px solid var(--rojo);
+    border-bottom: 5px solid var(--rojo);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
     margin-bottom: 35px;
     text-align: center;
@@ -89,7 +97,7 @@ main {
 .integrantes h2 {
     text-align: center;
     font-size: 28px;
-    color: var(--rojo2);
+    color: var(--blanco);
     margin-bottom: 25px;
 }
 
@@ -101,35 +109,51 @@ main {
     margin-bottom: 40px;
 }
 
-.integrante {
+.integrantes-container-new {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 5px 5px rgba(216, 14, 108, 0.07);
+    border-top: 5px solid var(--rojo);
+    border-bottom: 5px double var(--rojo);
+}
+
+.card-body {
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
     background-color: var(--blanco);
     border-radius: 12px;
-    padding: 20px;
-    width: 210px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
-    border-top: 4px solid var(--rojo);
 }
 
-.integrante img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%; 
-    object-fit: cover;  
-    margin-bottom: 12px;
-    border: 3px solid #ffffff;
-}
 
-.integrante h3 {
+.card-body h5{
     color: var(--rojo2);
     font-size: 18px;
     margin-bottom: 8px;
 }
 
-.integrante p {
+.card-body p {
     font-size: 13px;
     color: #444;
 }
+
+.card-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10%; 
+    object-fit: cover;  
+    border: 5px solid #ffffff;
+}
+
 
 .pie {
     padding-top: 2rem;
